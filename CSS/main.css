@@ -101,7 +101,7 @@ align-items: center;
 
 .ReviewBox{
  font-family: 'Arizonia', cursive;
- position: fixed;
+ position: absolute;
  font-size: 2rem;
 
  left: 0px;
