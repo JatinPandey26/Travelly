@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #dad6d61f;
+    text-align: center;
+    
+}
+.mainBox{
+    margin-left: 15vw;
+    width: 70vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navBar{
+height: 7rem;
+width: 70vw;
+margin-top: 3rem;
+background-color: #ffffff;
+border-radius: 20px;
+display: flex;
+align-items: center;
+}
+
+.posterBox{
+    margin-top: 2rem;
+    width: 100%;
+    background-color: #ffffff;
+    
+}
+
+/* navBar  */
+
+.logoBox{
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: start;
+}
+.logoBox>img{
+    height: 100%;
+    width: 30%;
+   
+}
+.logoBox .title{
+    font-family: 'Arizonia', cursive;
+    font-size: 4rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    color: #659d89;
+}
+
+.optionBox{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+   
+    align-items: center;
+}
+.optionBox span{
+    font-family: 'Arizonia', cursive;
+    font-size: 1.5rem;
+    color: #6B9B8A;
+    position: relative;
+    transition: 1s ease-in-out;
+}
+
+.optionBox span:hover{
+    cursor: pointer;
+}
+
+.optionBox span::after{
+    content: "";
+    height: 0.2rem;
+    width: 0%;
+    background-color: #659d89;
+    position: absolute;
+    bottom: -10px;
+    left:0px;
+    transition: 0.5s ease-in-out;
+}
+
+.optionBox > span:hover::after{
+    content: "";
+    height: 0.2rem;
+    width: 100%;
+    background-color: #659d89;
+    position: absolute;
+    bottom: -10px;
+    left:0px;
+    transition: 0.2s ease-in-out;
+}
+
+/* review box */
+
+.ReviewBox{
+ font-family: 'Arizonia', cursive;
+ position: fixed;
+ font-size: 2rem;
+
+ left: 0px;
+ color: #659d89;
+ /* background-color: #659d89; */
+ transform: rotate(-90deg);
+}
+
+.ReviewBox::after{
+    content: "";
+    height: 0.2rem;
+    width: 0%;
+    background-color: #659d89;
+    position: absolute;
+    bottom: -10px;
+    left:0px;
+    transition: 0.5s ease-in-out;
+}
+
+.ReviewBox:hover{
+    cursor: pointer;
+}
+
+.ReviewBox:hover::after{
+    content: "";
+    height: 0.2rem;
+    width: 100%;
+    background-color: #659d89;
+    position: absolute;
+    bottom: -10px;
+    left:0px;
+    transition: 0.2s ease-in-out;
+    
+}
+

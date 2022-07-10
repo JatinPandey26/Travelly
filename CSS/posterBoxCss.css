@@ -1,0 +1,160 @@
+.posterBox{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    
+    /* align-items: center; */
+}
+
+.largeBox{
+    width: 95%;
+    height: 20rem;
+    /* background-coloraqua; */
+    /* border-radius: 10px; */
+    margin-top: 2rem;
+    z-index: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    flex-grow: 2;
+    position: relative;
+    justify-content: flex-start;
+    
+}
+
+.largeBox>img{
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+    transition: 2ms ease-in-out;
+    /* border-radius: 10px; */
+}
+.largeBoxImg.firstImg{
+    transform: translateX(200%);
+    transition: .5s ease-in-out;
+}
+.largeBoxImg.secondImg{
+    transform: translateX(300%);
+    transition: .5s ease-in-out;
+}
+.largeBoxImg.thirdImg{
+    transform: translateX(400%);
+    transition: .5s ease-in-out;
+}
+
+.largeBoxImg.firstImg.currImg{
+transform: translateX(0%);
+transition: .5s ease-in-out;
+
+}
+.largeBoxImg.secondImg.currImg{
+transform: translateX(-100%);
+transition: .5s ease-in-out;
+}
+.largeBoxImg.thirdImg.currImg{
+transform: translateX(-200%);
+transition: .5s ease-in-out;
+}
+.radioBtnDiv{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.radioBtnDiv>div{
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: white ;
+    border-radius: 50%;
+    margin-left: 3rem;
+    transition: 0.2s ease-in-out;
+}
+
+.radioBtnDiv>div.clicked{
+    /* height: 2rem;
+    width: 2rem; */
+    background-color: #659d89;
+
+    transition: 0.2s ease-in-out;
+}
+
+
+
+.splitBox{
+   
+    width: 95%;
+    
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1;
+}
+
+.smallBox{
+ width: 100%;
+ height: 30rem;
+ margin: 1rem;
+ position: relative;
+ /* background-color: black; */
+ overflow: hidden;
+ z-index: 1;
+ transition: 0.2s ease-in-out;
+}
+
+.smallBox:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+
+.smallBox>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-radius: 10px; */
+}
+
+.smallBox:hover::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(85, 74, 74, 0.767);
+    z-index: 1;
+    /* filter: grayscale(100%); */
+}
+
+.content{
+    position: absolute;
+    top: 40%;
+    height: 100%;
+    color:white;
+    z-index: 2;
+    transform: translateY(1000px);
+    /* background-color: black; */
+}
+
+.smallBox:hover .content{
+    position: absolute;
+    top: 40%;
+    height: 100%;
+    color:white;
+    z-index: 2;
+    transform: translateY(0rem);
+    transition: 0.5s ease;
+    margin-bottom: 1rem;
+}
+
+
